@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <DocumentationFile>C:\Users\marc0\source\repos\mcl.frota.csharp\mcl.frota.csharp\mcl.frotas.csharp.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="WeatherForecast.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\mcl.frotas.domain\mcl.frotas.domain.csproj" />
+    <ProjectReference Include="..\mcl.frotas.infra\mcl.frotas.infra.csproj" />
+  </ItemGroup>
+
+
+</Project>
